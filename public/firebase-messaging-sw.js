@@ -13,6 +13,10 @@ self.addEventListener("install", function (e) {
         image: data.image,
         badge:'3.jpg',
         vibrate:[200,100,300],
+        actions:[
+          {action:'open', title:'자세히보기'},
+          {action:'close', title:'닫기'}
+        ],
         data: {
           click_action: data.click_action, // 이 필드는 밑의 클릭 이벤트 처리에 사용됨
         },
@@ -52,8 +56,17 @@ self.addEventListener("install", function (e) {
         if (matchingClient) {
           return matchingClient.focus();
         } else {
-          return clients.openWindow(urlToOpen);
+          
+          if(event.action == 'open'){
+            return clients.openWindow('https://naver.com');
+          }else{
+              return event.notification.close();
+          }
+          
+          //return clients.openWindow(urlToOpen);
         }
+
+        
       });
  
     event.waitUntil(promiseChain);

@@ -12,17 +12,17 @@ export const metadata = {
   openGraph:{
     title:'PWA TEST',
     description:'PWA & FCM 테스트',
-    image:'/image/icon-512x512.png'    
+    image:'https://pwa-fcm-ten.vercel.app/image/icon-512x512.png'    
   },
   twitter: {
     title:'PWA TEST',
     description:'PWA & FCM 테스트',
-    image:'/image/icon-512x512.png' 
+    image:'https://pwa-fcm-ten.vercel.app/image/icon-512x512.png' 
   },
   icons:{
-    icon:'/image/favicon-16x16.png',
-    apple:'/image/favicon-16x16.png',
-    shortcut:'/image/favicon-1280x720.png',
+    icon:'https://pwa-fcm-ten.vercel.app/image/favicon-16x16.png',
+    apple:'https://pwa-fcm-ten.vercel.app/image/favicon-16x16.png',
+    shortcut:'https://pwa-fcm-ten.vercel.app/image/favicon-1280x720.png',
     other:{
       rel:'apple-touch-icon-precomposed',
       url: '/icons/apple-touch-icon-57x57.png',

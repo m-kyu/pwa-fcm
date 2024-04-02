@@ -56,9 +56,9 @@ self.addEventListener("install", function (e) {
         if (matchingClient) {
           return matchingClient.focus();
         } else {
-          
+
           if(event.action == 'open'){
-            return clients.openWindow('https://naver.com');
+            return clients.openWindow(event.action.url);
           }else{
               return event.notification.close();
           }

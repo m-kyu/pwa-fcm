@@ -22,7 +22,16 @@ if (typeof window !== "undefined" && typeof window.navigator !== "undefined") {
 }
 
 export const getClientToken = async () => {
-  let currentToken = await   getToken(messaging,{vapidKey:'BEQwHlviB52V6zKaZjoT9Xq0xlWgM3z6U_kSd04NuJOua5qguWGgbGPRvD3qRVkl-Bj4EQ7F0d6vYHZHgXhJ9P0'});
-  return currentToken;
+  
+  let currentToken;
+  try{
+     currentToken = await getToken(messaging,{vapidKey:'BEQwHlviB52V6zKaZjoT9Xq0xlWgM3z6U_kSd04NuJOua5qguWGgbGPRvD3qRVkl-Bj4EQ7F0d6vYHZHgXhJ9P0'})
+    .then(res=>{
+      console.log(res,'=======gettoken=========')
+      return res
+    });
+  }catch{}
+    return currentToken;
+  
 }
 

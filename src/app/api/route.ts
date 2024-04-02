@@ -30,6 +30,7 @@ const sendFCMNotification = async (data: NotificationData) => {
 };
 
 export async function POST(req: NextRequest) {  
+    
     const { message } = await req.json();
     const fcmNoti = await sendFCMNotification(message);
     return NextResponse.json([]);

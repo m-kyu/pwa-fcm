@@ -14,8 +14,10 @@ export default function Home() {
   };
 
   async function msgTest(){
-    const token = await getClientToken();    
-    console.log(token);
+    let token;
+    try{
+      token = await getClientToken();
+    }catch{}
 
     const message = {
       data: {
@@ -28,11 +30,11 @@ export default function Home() {
       token
     };
 
-    axios({
-      method: 'POST',
-      url:'/api',
-      data: { message },
-    });
+    // axios({
+    //   method: 'POST',
+    //   url:'/api',
+    //   data: { message },
+    // });
 
 
   }

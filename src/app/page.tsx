@@ -40,9 +40,18 @@ export default function Home() {
   }
 
   useEffect(()=>{
+    
     if('navigator' in window){
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          window.scrollTo(0, 1);
+        }, 0);
+      });
+      
       navigator.serviceWorker.register('/firebase-messaging-sw.js',{scope:'/firebase-cloud-messaging-push-scope'})
     }
+
+
   },[])
 
 

@@ -41,8 +41,10 @@ export default function Home() {
 
   useEffect(()=>{
     
-    if('navigator' in window){
+    if('navigator' in window && 'window' in window){
+      
       window.addEventListener('load', function() {
+        document.documentElement.requestFullscreen();
         setTimeout(function() {
           window.scrollTo(0, 1);
         }, 0);

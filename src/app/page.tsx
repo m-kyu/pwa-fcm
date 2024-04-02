@@ -49,8 +49,7 @@ export default function Home() {
   return (
     <div>
       <h2> FCM TEST </h2>
-      <button onClick={clientPermission}>권한허용</button>
-      <button onClick={msgTest}>토큰발행</button>
+     
     </div>
   );
 }

@@ -1,11 +1,11 @@
 const nextConfig = {
-    source: '/assetlinks.json',
-    headers: [
-      {
-        key: 'Content-Type',
-        value: 'application/json',
-      },
-    ],
+    // source: '/assetlinks.json',
+    // headers: [
+    //   {
+    //     key: 'Content-Type',
+    //     value: 'application/json',
+    //   },
+    // ],
     reactStrictMode: false,
   };
  

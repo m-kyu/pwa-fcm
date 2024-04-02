@@ -51,6 +51,12 @@ export default function Home() {
       <h2> FCM TEST </h2>
       <button onClick={clientPermission}>권한허용</button>
       <button onClick={msgTest}>토큰발행</button>
+
+      <figure><img src="/image/icon-512x512.png" alt="tet"/></figure>
+      <figure><img src="/image/icon-512x512.png" alt="tet"/></figure>
+      <figure><img src="/image/icon-512x512.png" alt="tet"/></figure>
+      <figure><img src="/image/icon-512x512.png" alt="tet"/></figure>
+
     </div>
   );
 }

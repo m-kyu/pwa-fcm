@@ -105,3 +105,7 @@ a {
     color-scheme: dark;
   }
 }
+
+
+
+body{overflow-y:auto;overflow-x:hidden;height:98vh;}
